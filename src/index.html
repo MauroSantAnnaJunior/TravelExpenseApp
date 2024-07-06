@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Expense Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Expense Manager</h1>
+        <div>
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="quantity" placeholder="Quantity">
+            <input type="number" id="value" placeholder="Value">
+            <select id="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+            <button id="add-btn">Add Expense</button>
+        </div>
+        <ul id="expense-list"></ul>
+        <div>
+            <p>Total Original: <span id="total-value">0.00</span></p>
+            <p>Total Converted (BRL): <span id="total-converted-value">0.00</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
